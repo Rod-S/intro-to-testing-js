@@ -21,4 +21,11 @@ describe('sayHello', function(){
    it('should be a defined function', function() {
        expect(typeof sayHello).toBe('function');
    });
+   it('should return a string when called', function() {
+       expect(typeof sayHello()).toBe("string");
+   })
 });
+
+
+//Exercise 2
+//Ensure our function returns the right data type
