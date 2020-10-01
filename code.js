@@ -14,3 +14,18 @@ function isFive(input) {
 function isEven(input) {
     return (Number(input) % 2 === 0)
 }
+
+function isVowel(val) {
+    if (val && typeof val == "string"){
+        if ((val && val.match(/[AEIOU]/i)) && val.length === 1 ) {
+            return true
+        } else {
+            return false
+        }
+    } else if (typeof val === "number") {
+        return false
+    }
+    else {
+        return false
+    }
+}

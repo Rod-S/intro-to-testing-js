@@ -88,3 +88,33 @@ describe('isEven', function(){
         expect(isEven()).not.toBe(undefined);
     })
 });
+
+describe('isVowel', function() {
+    it('should be a defined function', function() {
+        expect(typeof isVowel).toBe('function');
+    });
+    it('should always return a boolean', function() {
+        expect(typeof isVowel()).toBe('boolean');
+    });
+    it('should return true when passed in "a"', function() {
+       expect(isVowel("a")).toBe(true);
+    });
+    it('should return true when passed in "A"', function() {
+        expect(isVowel("A")).toBe(true);
+    });
+    it('should return false when passed in "y"', function() {
+        expect(isVowel("y")).toBe(false);
+    });
+    it('should return false when passed in "4"', function() {
+        expect(isVowel(4)).toBe(false);
+    });
+    it('should return false for passing in either true and false', function() {
+       expect(isVowel(true || false)).toBe(false);
+    });
+    it('should return false for passing in "banana"', function() {
+        expect(isVowel("banana")).toBe(false);
+    });
+    it('should return false if no argument is provided', function() {
+       expect(isVowel()).toBe(false);
+    });
+});
