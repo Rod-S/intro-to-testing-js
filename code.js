@@ -10,3 +10,7 @@ function sayHello(input) {
 function isFive(input) {
     return (input == 5)
 }
+
+function isEven(input) {
+    return (Number(input) % 2 === 0)
+}
