@@ -27,8 +27,8 @@ describe('sayHello', function(){
    it('should return "Hello, Jane!"', function() {
       expect(sayHello()).toBe("Hello, Jane!");
    });
+   it('should return "Hello, Alex!"', function() {
+      expect(sayHello("Alex")).toBe("Hello, Alex!");
+   });
 });
 
-
-//Exercise 2
-//Ensure our function returns the right data type
