@@ -29,3 +29,7 @@ function isVowel(val) {
         return false
     }
 }
+
+function add(num1, num2) {
+return Number(num1 + num2) || NaN;
+}
